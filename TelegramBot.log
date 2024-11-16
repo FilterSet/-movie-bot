@@ -1,0 +1,1158 @@
+[11/16/2024 07:07:00 PM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[11/16/2024 07:09:00 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:16:55 PM:pyrogram.dispatcher:253:ERROR] local variable 'reply_markup' referenced before assignment
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/commands.py", line 27, in start
+    await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
+UnboundLocalError: local variable 'reply_markup' referenced before assignment
+[11/16/2024 07:21:23 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:25 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:25 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:27 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:27 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:28 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:29 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:34 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/inline.py", line 36, in answer
+    await query.answer(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/inline_mode/inline_query.py", line 172, in answer
+    return await self._client.answer_inline_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_inline_query.py", line 99, in answer_inline_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetInlineBotResults")
+[11/16/2024 07:21:34 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:40 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:40 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:40 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:40 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:40 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:41 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:44 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:45 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:46 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:47 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:47 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:47 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:47 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:21:55 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:22:00 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:22:02 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:22:09 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:28:02 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "messages.SendMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 722, in auto_filter
+    mst = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 970, in reply_text
+    return await self._client.send_message(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.not_acceptable_406.ChannelPrivate: Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "messages.SendMessage")
+[11/16/2024 07:29:48 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:29:53 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:29:56 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:29:56 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 358, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 373, in cb_handler
+    await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:31:11 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "channels.DeleteMessages")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 36, in give_filter
+    await auto_filter(client, message)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 724, in auto_filter
+    await mst.delete()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 3213, in delete
+    return await self._client.delete_messages(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/messages/delete_messages.py", line 70, in delete_messages
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.not_acceptable_406.ChannelPrivate: Telegram says: [406 CHANNEL_PRIVATE] - The channel/supergroup is not accessible (caused by "channels.DeleteMessages")
+[11/16/2024 07:37:39 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:37:40 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:37:41 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:37:45 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:37:45 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:37:46 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:37:49 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 116, in next_page
+    await query.answer()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 159, in answer
+    return await self._client.answer_callback_query(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/bots/answer_callback_query.py", line 73, in answer_callback_query
+    return await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.QueryIdInvalid: Telegram says: [400 QUERY_ID_INVALID] - The callback query id is invalid (caused by "messages.SetBotCallbackAnswer")
+[11/16/2024 07:44:37 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 555, in cb_handler
+    await query.message.edit_text(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 2803, in edit_text
+    return await self._client.edit_message_text(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[11/16/2024 07:44:57 PM:pyrogram.dispatcher:253:ERROR] Telegram says: [403 MESSAGE_DELETE_FORBIDDEN] - You don't have rights to delete messages in this chat, most likely because you are not the author of them (caused by "messages.DeleteMessages")
+Traceback (most recent call last):
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/ubuntu/movie-bot/plugins/pm_filter.py", line 146, in cb_handler
+    await query.message.delete()
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/types/messages_and_media/message.py", line 3213, in delete
+    return await self._client.delete_messages(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/messages/delete_messages.py", line 77, in delete_messages
+    r = await self.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/ubuntu/movie-bot-env/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.forbidden_403.MessageDeleteForbidden: Telegram says: [403 MESSAGE_DELETE_FORBIDDEN] - You don't have rights to delete messages in this chat, most likely because you are not the author of them (caused by "messages.DeleteMessages")
